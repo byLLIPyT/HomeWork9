@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,7 @@
 		AB905B34230B30A700F2C1EB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB905B32230B30A700F2C1EB /* Main.storyboard */; };
 		AB905B36230B30A900F2C1EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB905B35230B30A900F2C1EB /* Assets.xcassets */; };
 		AB905B39230B30A900F2C1EB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB905B37230B30A900F2C1EB /* LaunchScreen.storyboard */; };
+		ABD647BC230D15480081DEE7 /* animated.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD647BB230D15480081DEE7 /* animated.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		AB905B35230B30A900F2C1EB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AB905B38230B30A900F2C1EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AB905B3A230B30A900F2C1EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ABD647BB230D15480081DEE7 /* animated.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = animated.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,7 +56,6 @@
 				64F2FE2F52EA560B415BDC0D /* Pods-HomeWork9.debug.xcconfig */,
 				4E2847DDC4370906053086F6 /* Pods-HomeWork9.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -85,6 +86,7 @@
 				AB905B35230B30A900F2C1EB /* Assets.xcassets */,
 				AB905B37230B30A900F2C1EB /* LaunchScreen.storyboard */,
 				AB905B3A230B30A900F2C1EB /* Info.plist */,
+				ABD647BB230D15480081DEE7 /* animated.swift */,
 			);
 			path = HomeWork9;
 			sourceTree = "<group>";
@@ -205,6 +207,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AB905B31230B30A700F2C1EB /* ViewController.swift in Sources */,
+				ABD647BC230D15480081DEE7 /* animated.swift in Sources */,
 				AB905B2F230B30A700F2C1EB /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
