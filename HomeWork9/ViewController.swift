@@ -26,57 +26,49 @@ class ViewController: UIViewController {
         
         switch animationCount {
         case 0:
-            print("Анимация 1")
             startAnimation(animation: animatedStruct[animationCount])
             springLabel.text = animatedStruct[animationCount].text
             if animationCount == animatedStruct.count - 1{
-                runButton.titleLabel?.text = animatedStruct[0].text
+                runButton.setTitle(animatedStruct[0].text, for: .normal)
             } else {
-                runButton.titleLabel?.text = animatedStruct[animationCount + 1].text
+                runButton.setTitle(animatedStruct[animationCount + 1].text, for: .normal)
             }
             animationCount += 1
         case 1:
-            print("Анимация 2")
             startAnimation(animation: animatedStruct[animationCount])
             springLabel.text = animatedStruct[animationCount].text
-            if animationCount == animatedStruct.count - 1 {
-                runButton.titleLabel?.text = animatedStruct[0].text
+            if animationCount == animatedStruct.count - 1{
+                runButton.setTitle(animatedStruct[0].text, for: .normal)
             } else {
-                runButton.titleLabel?.text = animatedStruct[animationCount + 1].text
+                runButton.setTitle(animatedStruct[animationCount + 1].text, for: .normal)
             }
             animationCount += 1
         case 2:
-            print("Анимация 3")
             startAnimation(animation: animatedStruct[animationCount])
             springLabel.text = animatedStruct[animationCount].text
             if animationCount == animatedStruct.count - 1{
-                runButton.titleLabel?.text = animatedStruct[0].text
+                runButton.setTitle(animatedStruct[0].text, for: .normal)
             } else {
-                runButton.titleLabel?.text = animatedStruct[animationCount + 1].text
+                runButton.setTitle(animatedStruct[animationCount + 1].text, for: .normal)
             }
             animationCount += 1
         case 3:
-            print("Анимация 4")
             startAnimation(animation: animatedStruct[animationCount])
             springLabel.text = animatedStruct[animationCount].text
             if animationCount == animatedStruct.count - 1{
-                runButton.titleLabel?.text = animatedStruct[0].text
+                runButton.setTitle(animatedStruct[0].text, for: .normal)
             } else {
-                runButton.titleLabel?.text = animatedStruct[animationCount + 1].text
+                runButton.setTitle(animatedStruct[animationCount + 1].text, for: .normal)
             }
             animationCount += 1
         case 4:
-            print("Анимация 5")
             startAnimation(animation: animatedStruct[animationCount])
             springLabel.text = animatedStruct[animationCount].text
             if animationCount == animatedStruct.count - 1{
-                runButton.titleLabel?.text = animatedStruct[0].text
+                runButton.setTitle(animatedStruct[0].text, for: .normal)
             } else {
-                runButton.titleLabel?.text = animatedStruct[animationCount + 1].text
+                runButton.setTitle(animatedStruct[animationCount + 1].text, for: .normal)
             }
-            animationCount += 1
-        case 5:
-            print("Сброс")
             animationCount = 0
         default:
             break
@@ -84,6 +76,7 @@ class ViewController: UIViewController {
     }
     
     func startAnimation(animation: animated){
+        
             springView.animation = animation.animation
             springView.curve = animation.curve
             springView.force = animation.force
@@ -93,37 +86,38 @@ class ViewController: UIViewController {
     }
     
     func createAnimated() -> [animated] {
+        
         let anim = [
         animated(animation: "wobble",
                  curve: "spring",
                  force: 2.7,
                  duration: 2.9,
                  delay: 1.8,
-                 text:"animated: AAA, curve: 2, force: 2, duration:1, delay: 1"),
+                 text:"animated: wobble, curve: spring"),
         animated(animation: "fall",
                  curve: "easeIn",
                  force: 1.8,
                  duration: 1,
                  delay: 2,
-                 text:"animated: AAA, curve: 2, force: 2, duration:1, delay: 1"),
+                 text:"animated: fall, curve: easeIn"),
         animated(animation: "slideUp",
                  curve: "easeInOutBack",
                  force: 1,
                  duration: 2,
                  delay: 1,
-                 text:"animated: AAA, curve: 2, force: 2, duration:1, delay: 1"),
+                 text:"animated: slideUp, curve: easeInOutBack"),
         animated(animation: "fadeOut",
-                 curve: "easeInCirc",
-                 force: 1,
-                 duration: 1,
-                 delay: 1,
-                 text:"animated: AAA, curve: 2, force: 2, duration:1, delay: 1"),
-        animated(animation: "swing",
                  curve: "easeInCirc",
                  force: 2,
                  duration: 1,
-                 delay: 3,
-                 text:"animated: AAA, curve: 2, force: 2, duration:1, delay: 1")
+                 delay: 0,
+                 text:"animated: fadeOut, curve: easeInCirc"),
+        animated(animation: "swing",
+                 curve: "easeInCirc",
+                 force: 2,
+                 duration: 1.5,
+                 delay: 0.5,
+                 text:"animated: swing, curve: easeInCirc")
         ]
         return anim
     }
